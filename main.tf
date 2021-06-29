@@ -7,7 +7,6 @@ resource "aws_s3_bucket" "log_bucket" {
   acl    = "log-delivery-write"
   versioning {
     enabled    = false
-    mfa_delete = true
   }
   server_side_encryption_configuration {
     rule {
